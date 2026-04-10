@@ -24,6 +24,8 @@ html, body{
     box-shadow: inset 10px 0px 15px  0px rgba(0, 0, 0, 0.1);
     background-color: rgb(230, 190, 250);
      cursor: pointer;
+     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 .card .text-container {
     width: 100%;
@@ -61,6 +63,15 @@ html, body{
     font-style: italic;
     text-align: center;
     margin: 20px auto 0px auto;
+}
+/* Safari 3D fix */
+.card .front,
+.card .back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 .card .front {
     position: absolute;
