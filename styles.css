@@ -33,6 +33,7 @@ html, body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    pointer-events: none;
 }
 .card .text-container #head {
     font-family: 'Nobile', sans-serif;
