@@ -320,8 +320,8 @@ html, body{
     transform: scale(1);
 }
 .image-box {
-    width: 120px;
-    height: 160px;
+    width: clamp(100px, 40%, 180px);
+    aspect-ratio: 3 / 4; /* keeps nice portrait shape */
     margin: 15px auto;
     border-radius: 16px;
     overflow: hidden;
@@ -390,6 +390,8 @@ html, body{
         height: 100%;
         object-fit: cover;
     }
+       .image-box {
+        width: 60%;
     .copyright {
     font-size: 11px;
     bottom: 8px;
