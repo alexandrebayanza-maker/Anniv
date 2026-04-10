@@ -113,15 +113,6 @@ html, body{
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
     
 }
-/* Safari 3D fix */
-.card .front,
-.card .back {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
 .cover-shape-large {
     position: absolute;
     width: 55%;
