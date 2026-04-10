@@ -7,18 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <script>
-const card = document.querySelector('.card');
+document.addEventListener('DOMContentLoaded', function () {
+    const card = document.querySelector('.card');
 
-function toggleCard(e) {
-    e.stopPropagation();
-    card.classList.toggle('open');
-}
-
-// Click (desktop)
-card.addEventListener('click', toggleCard);
-
-// Touch (Safari / mobile)
-card.addEventListener('touchstart', toggleCard);
+    card.addEventListener('click', function () {
+        this.classList.toggle('open');
+    });
+});
 </script>
 <body>
    <div class="card">
