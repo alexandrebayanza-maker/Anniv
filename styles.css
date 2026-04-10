@@ -89,6 +89,7 @@ html, body{
 .card:hover .front, .card.open .front {
     transform:perspective(800px) rotateY(-170deg);
     background-color: rgb(255, 130, 130);
+    pointer-events: none;
 }
 .card:hover .back, .card.open .back {
     transform: perspective(800px) rotateY(-170deg);
