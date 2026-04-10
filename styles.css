@@ -26,6 +26,7 @@ html, body{
      cursor: pointer;
      transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
+    touch-action: manipulation;
 }
 .card .text-container {
     width: 100%;
